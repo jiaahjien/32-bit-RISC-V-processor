@@ -1,6 +1,6 @@
 # RISC-V Single-Cycle & 5-Stage Pipeline (Undergraduate Project)
 
-This repository contains the Verilog HDL implementation of a **RISC-V RV32I** processor in both **Single-Cycle** and **5-Stage Pipeline** architectures. This work was completed as a undergraduate project at **Ho Chi Minh City University of Technology and Engineering**.
+This repository contains the Verilog HDL implementation of a **RISC-V RV32I** processor in **5-Stage Pipeline** architectures. This work was completed as an undergraduate project at **Ho Chi Minh City University of Technology and Engineering**.
 
 ##  Project Information
 
@@ -11,27 +11,45 @@ This repository contains the Verilog HDL implementation of a **RISC-V RV32I** pr
 
 ##  Hardware and Tools
 
-
 - **Synthesis Tool:** Vivado 2025.1
 - **Simulation / Testbench:** Vivado Simulator 2025.1
-- **HDL Languge:** Verilog
+- **HDL Language:** Verilog
 - **Instruction Set:** RV32I Base Integer Instruction Set
-##  Repository Structure
-RISC-V-single-cycle/
-├── CORE/
-│   ├── single_cycle/          # Single-cycle CPU design
-│   └── five_stage/            # 5-stage pipeline CPU design
-├── TEST/
-│   ├── single_cycle_tb/       # Testbench for single-cycle
-│   └── pipeline_tb/           # Testbench for 5-stage pipeline
-├── RISC-V 5 STAGE.drawio      # Diagram source
-├── RISC-V 5 STAGE.png         # Pipeline diagram
-├── README.md
+
+## Repository Structure
+
+```bash
+32-bit-RISC-V-processor/
+├── CORE/                          # Các module chính của CPU 5-stage pipeline
+│   ├── top.v
+│   ├── PC_reg.v
+│   ├── inst_mem.v
+│   ├── Decode_reg.v
+│   ├── control_unit.v
+│   ├── imm_extend.v
+│   ├── regfile.v
+│   ├── Execute_reg.v
+│   ├── alu.v
+│   ├── jump_branch.v
+│   ├── mux2.v
+│   ├── mux32.v
+│   ├── Mem_reg.v
+│   ├── data_memory.v
+│   ├── Write_back_reg.v
+│   └── Hazard_unit.v
+│
+├── TEST/                          # Testbench và file test
+│   ├── tb.v
+│   ├── instruction_R_type.mem
+│   ├── instruction_I_type.mem
+│   └── instruction_B_TYPE.mem
+│
+├── RISC-V 5 STAGE.drawio          # File sơ đồ draw.io
+├── RISC-V 5 STAGE.png             # Hình ảnh pipeline 5 giai đoạn
+└── README.md
 
 ##  Project Overview
-
 This project implements a basic RISC-V processor supporting the **RV32I** instruction set. The design includes two versions:
-- **Single-Cycle Processor**: All instructions complete in one clock cycle.
 - **5-Stage Pipeline Processor**: Improved performance with pipelining (IF, ID, EX, MEM, WB).
 
 ### 5-Stage Pipeline Diagram
@@ -61,4 +79,4 @@ This project implements a basic RISC-V processor supporting the **RV32I** instru
 ---
 
 Thank you for visiting the repository!  
-If you have any questions or want to contribute, Please don't hesitate to contact me at ntkhiem2510@gmail.com
+If you have any questions or want to contribute, please don't hesitate to contact me at hienphamphucgia@gmail.com
