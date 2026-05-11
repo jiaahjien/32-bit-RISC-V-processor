@@ -5,7 +5,6 @@ This repository contains the Verilog HDL implementation of a **RISC-V RV32I** pr
 ##  Project Information
 
 - **Title:** RISC-V Single-Cycle and 5-Stage Pipeline Processor 
-<!-- - **Supervisor:** ThS. Tran Hoang Quan   -->
 - **Author:** Pham Phuc Gia Hien
 - **Department:** Faculty of Electrical and Electronics Engineering, Ho Chi Minh City University of Technology and Engineering
 
@@ -64,7 +63,6 @@ This project implements a basic RISC-V processor supporting the **RV32I** instru
 
 ## Goals
 - Understand the micro-architecture of modern processors
-- Compare performance between single-cycle and pipelined design
 - Master Verilog HDL for complex digital systems
 - Prepare foundation for advanced Computer Architecture projects
 
