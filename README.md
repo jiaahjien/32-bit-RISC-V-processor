@@ -20,7 +20,7 @@ This repository contains the Verilog HDL implementation of a **RISC-V RV32I** pr
 
 ```bash
 32-bit-RISC-V-processor/
-├── CORE/                          # Các module chính của CPU 5-stage pipeline
+├── CORE/                     
 │   ├── top.v
 │   ├── PC_reg.v
 │   ├── inst_mem.v
@@ -38,15 +38,16 @@ This repository contains the Verilog HDL implementation of a **RISC-V RV32I** pr
 │   ├── Write_back_reg.v
 │   └── Hazard_unit.v
 │
-├── TEST/                          # Testbench và file test
+├── TEST/                         
 │   ├── tb.v
 │   ├── instruction_R_type.mem
 │   ├── instruction_I_type.mem
 │   └── instruction_B_TYPE.mem
 │
-├── RISC-V 5 STAGE.drawio          # File sơ đồ draw.io
-├── RISC-V 5 STAGE.png             # Hình ảnh pipeline 5 giai đoạn
+├── RISC-V 5 STAGE.drawio          
+├── RISC-V 5 STAGE.png       
 └── README.md
+```
 
 ##  Project Overview
 This project implements a basic RISC-V processor supporting the **RV32I** instruction set. The design includes two versions:
