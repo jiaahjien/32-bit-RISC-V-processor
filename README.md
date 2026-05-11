@@ -1,4 +1,4 @@
-# RISC-V Single-Cycle & 5-Stage Pipeline (Undergraduate Project)
+# RISC-V 5-Stage Pipeline (Undergraduate Project)
 
 This repository contains the Verilog HDL implementation of a **RISC-V RV32I** processor in **5-Stage Pipeline** architectures. This work was completed as an undergraduate project at **Ho Chi Minh City University of Technology and Engineering**.
 
