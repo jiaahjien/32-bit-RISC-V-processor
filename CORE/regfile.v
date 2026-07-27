@@ -84,7 +84,7 @@ output [31:0] checker31;
             // Reset all registers to 0
             for (i = 0; i < 32; i = i + 1) begin
                 if (i == 2) 
-                    regfile[i] <= 32'h500;
+                    regfile[i] <= 32'h500; //address
                 else
                 regfile[i] <= 32'b0;
             end
